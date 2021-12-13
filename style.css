@@ -1,0 +1,105 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: logo; }
+.item3 { grid-area: intro; }
+.item4 { grid-area: info; }
+.item5 { grid-area: main; }
+.item6 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header logo'
+    'intro intro intro intro intro intro info info'
+    'main main main main main main main main'
+    'footer footer footer footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: #ffffff;
+}
+body {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+h1 {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 24px;
+}
+h3 {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+p {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#myInput {
+  width: 60%;
+  font-size: 16px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+table {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+table td {
+  text-align: left;
+  padding: 10px;
+}
+
+table th {
+  text-align: left;
+  padding: 10px;
+}
+
+table tr.header {
+  background-color: #f1f1f1;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr:hover {
+  background-color: #f1f1f1;
+}
